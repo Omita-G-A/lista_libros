@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+      integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        .success, .error {
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+
+        .success {
+            background-color: green;
+        }
+
+        .error {
+            background-color: red;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Añadir libro</h1>
+      <form id="book-form">
+        <div>
+          <label for="title">Título</label>
+          <input id="title" type="text" class="u-full-width" />
+        </div>
+        <div>
+          <label for="author">Autor</label>
+          <input id="author" type="text" class="u-full-width" />
+        </div>
+        <div>
+          <label for="dueDate">Fecha devolución</label>
+          <input id="dueDate" type="text" class="u-full-width" />
+        </div>
+        <div>
+            <input type="submit" value="Guardar" class="u-full-width" />
+        </div>
+      </form>
+      <table class="u-full-width">
+          <thead>
+              <tr>
+                  <th>Título</th>
+                  <th>Autor</th>
+                  <th>Fecha de devolución</th>
+                  <th></th>
+              </tr>
+          </thead>
+          <tbody id="book-list"></tbody>
+      </table>
+    </div>
+    <!-- <script src="js/01_lista_libros_con_propotipos.js"></script> -->
+    <script src="js/02_lista_libros_con_classes.js"></script>
+  </body>
+</html>
